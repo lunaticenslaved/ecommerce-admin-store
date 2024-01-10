@@ -20,7 +20,7 @@ export function Gallery({ images = [] }: GalleryProps) {
           ))}
         </Tab.List>
       </div>
-      <Tab.Panels className="aspect-square w-full">
+      <Tab.Panels className="aspect-square w-full bg-neutral-200 sm:rounded-lg">
         {images.map(image => (
           <Tab.Panel key={image.id}>
             <div className="aspect-square relative h-full w-full sm:rounded-lg overflow-hidden">
